@@ -21,6 +21,7 @@ import { EditDialogComponent } from '../edit-dialog/edit-dialog';
     MatDialogModule,
   ],
   templateUrl: './periodic-table.html',
+  styleUrl: './periodic-table.scss'
 })
 export class PeriodicTableComponent {
   private store = inject(ElementStore);

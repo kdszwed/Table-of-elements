@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import {
   MAT_DIALOG_DATA,
   MatDialogActions,
@@ -25,6 +26,7 @@ import { CommonModule } from '@angular/common';
     MatDialogActions,
     MatDialogClose,
     MatDialogTitle,
+    MatIconModule,
   ],
   template: `
     <h2 mat-dialog-title>Edytuj pierwiastek</h2>
@@ -45,9 +47,15 @@ import { CommonModule } from '@angular/common';
       </mat-form-field>
     </mat-dialog-content>
 
-    <mat-dialog-actions>
-      <button mat-button mat-dialog-close>Anuluj</button>
-      <button mat-button (click)="save()">Zapisz</button>
+    <mat-dialog-actions align="center">
+      <button mat-raised-button color="accent" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+        Anuluj
+      </button>
+      <button mat-raised-button color="accent" (click)="save()">
+        <mat-icon>save</mat-icon>
+        Zapisz
+      </button>
     </mat-dialog-actions>
   `,
 })
