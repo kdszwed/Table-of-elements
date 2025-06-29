@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import {MatButton} from '@angular/material/button';
+import { PeriodicTableComponent } from './components/periodic-table/periodic-table';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MatButton],
+  imports: [PeriodicTableComponent],
   templateUrl: './app.html',
-  styleUrls: ['./app.scss']
+  styleUrl: './app.scss'
 })
 export class App {
   protected title = 'Table-of-elements';
