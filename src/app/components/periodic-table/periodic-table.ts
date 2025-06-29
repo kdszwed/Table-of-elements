@@ -6,7 +6,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
-import { AsyncPipe, NgFor } from '@angular/common';
 import { PeriodicElement } from '../../models/element.model';
 import { EditDialogComponent } from '../edit-dialog/edit-dialog';
 
@@ -14,8 +13,6 @@ import { EditDialogComponent } from '../edit-dialog/edit-dialog';
   selector: 'periodic-table',
   standalone: true,
   imports: [
-    NgFor,
-    AsyncPipe,
     FormsModule,
     MatTableModule,
     MatFormFieldModule,
@@ -50,4 +47,11 @@ export class PeriodicTableComponent {
       if (result) this.store.updateElement(result);
     });
   }
+
+  onInput(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    this.onFilterChange(value);
+  }
+
+
 }

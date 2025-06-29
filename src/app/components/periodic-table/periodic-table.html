@@ -1,6 +1,7 @@
 <mat-form-field appearance="outline">
   <mat-label>Filtruj</mat-label>
-  <input matInput (input)="onFilterChange($event.target.value)" />
+  <input matInput (input)="onInput($event)" />
+
 </mat-form-field>
 
 <table mat-table [dataSource]="elements()" class="mat-elevation-z8">
