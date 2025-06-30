@@ -1,5 +1,16 @@
 # TableOfElements
 
+Aplikacja wyświetla interaktywną tabelę pierwiastków chemicznych z możliwością filtrowania, edycji danych i zachowywania ich w LocalStorage. Zbudowana w oparciu o Angular 20 w trybie standalone, wykorzystuje Angular Material oraz SignalStore do zarządzania stanem.
+
+Technologie:
+- Angular 20 (standalone)
+- Angular Material (UI)
+- SignalStore (zarządzanie stanem + LocalStorage)
+- SCSS (stylowanie)
+- Git + GitHub
+
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
 
 ## Development server
